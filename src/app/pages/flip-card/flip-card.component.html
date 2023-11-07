@@ -1,0 +1,51 @@
+<div class="main">
+  <div class="title-container">
+
+    <p>Всего слов в разделе: <span>{{totalWords}}</span></p>
+
+  </div>
+
+  <div class="card-container">
+    <button class="btn" (click)="previousCard()">Предыдущая карточка</button>
+    <div class="card-box">
+      <div class="card" [class.flipped]="isFlipped" (click)="flipCard()">
+        <div class="card-front">
+          <ul class="words-container">
+            <li *ngFor="let word of wordsInRu">{{word}}</li>
+          </ul>
+        </div>
+        <div class="card-back">
+          <ul class="words-container">
+            <li *ngFor="let word of wordsInEng">{{word}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button class="btn" (click)="nextCard()">Следующая карточка</button>
+  </div>
+
+  <div class="buttons-container">
+    <div class="radio" *ngFor="let language of languages">
+      <input id="{{language.id}}" name="radio" value="{{language.value}}" type="radio" [(ngModel)]="initialStateLang" (ngModelChange)="changeLanguage(language.value)">
+      <label for="{{language.id}}" class="radio-label">{{language.value}}</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
