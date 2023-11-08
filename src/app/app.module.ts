@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
         FlipCardComponent,
         HeaderComponent,
         FooterComponent,
-        MainLayoutComponent
+        MainLayoutComponent,
+        HomePageComponent
     ],
   imports: [
     BrowserModule,
