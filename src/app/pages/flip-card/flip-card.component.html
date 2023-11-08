@@ -8,16 +8,18 @@
   <div class="card-container">
     <button class="btn" (click)="previousCard()">Предыдущая карточка</button>
     <div class="card-box">
-      <div class="card" [class.flipped]="isFlipped" (click)="flipCard()">
-        <div class="card-front">
-          <ul class="words-container">
-            <li *ngFor="let word of wordsInRu">{{word}}</li>
-          </ul>
-        </div>
-        <div class="card-back">
-          <ul class="words-container">
-            <li *ngFor="let word of wordsInEng">{{word}}</li>
-          </ul>
+      <div class="test" [@fadeInOut]="" *ngIf="testLet">
+        <div class="card" [class.flipped]="isFlipped" (click)="flipCard()">
+          <div class="card-front">
+            <ul class="words-container">
+              <li *ngFor="let word of wordsInRu">{{word}}</li>
+            </ul>
+          </div>
+          <div class="card-back">
+            <ul class="words-container">
+              <li *ngFor="let word of wordsInEng">{{word}}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -26,11 +28,13 @@
 
   <div class="buttons-container">
     <div class="radio" *ngFor="let language of languages">
-      <input id="{{language.id}}" name="radio" value="{{language.value}}" type="radio" [(ngModel)]="initialStateLang" (ngModelChange)="changeLanguage(language.value)">
+      <input id="{{language.id}}" name="radio" value="{{language.value}}" type="radio" [(ngModel)]="initialStateLang"
+             (ngModelChange)="changeLanguage(language.value)">
       <label for="{{language.id}}" class="radio-label">{{language.value}}</label>
     </div>
   </div>
 </div>
+
 
 
 

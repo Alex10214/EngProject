@@ -8,19 +8,23 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from "@angular/forms";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         FlipCardComponent,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        MainLayoutComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

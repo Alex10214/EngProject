@@ -1,16 +1,30 @@
 import {Component, OnInit} from '@angular/core';
 
 import {wordsArray} from '../../data/arrData'
+import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-flip-card',
   templateUrl: './flip-card.component.html',
   styleUrls: ['./flip-card.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({opacity: 0}),
+        animate('0.2s', style({opacity: 1}))
+      ]),
+      transition(':leave', [
+        style({opacity: 1}),
+        animate('0.2s', style({opacity: 0}))
+      ]),
+    ])
+  ]
 })
 export class FlipCardComponent implements OnInit {
   isFlipped: boolean = false;
   wordsInEng: string[] = [];
   wordsInRu: string[] = [];
+  testLet = true;
   totalWords = wordsArray.length
   languages = [
     {id: 1, value: "Английский"},
@@ -49,28 +63,23 @@ export class FlipCardComponent implements OnInit {
   }
 
   previousCard() {
+    this.testLet = false;
     this.checkLanguages(this.initialStateLang);
     this.currentCardIndex = (this.currentCardIndex - 1 + wordsArray.length) % wordsArray.length;
-    if (this.initialStateLang === 'Случайно') {
-      setTimeout(() => {
-        this.customChangeWords();
-      }, 150)
-    } else {
-      this.customChangeWords();
-    }
-
+    this.customChangeWords();
+    setTimeout(() => {
+      this.testLet = true;
+    },200)
   }
 
   nextCard() {
+    this.testLet = false;
     this.checkLanguages(this.initialStateLang);
     this.currentCardIndex = (this.currentCardIndex + 1) % wordsArray.length;
-    if (this.initialStateLang === 'Случайно') {
-      setTimeout(() => {
-        this.customChangeWords();
-      }, 150)
-    } else {
-      this.customChangeWords();
-    }
+    this.customChangeWords();
+    setTimeout(() => {
+      this.testLet = true;
+    },200)
   }
 
   customChangeWords() {
@@ -90,6 +99,4 @@ export class FlipCardComponent implements OnInit {
       return word.trim().charAt(0).toUpperCase() + word.slice(1);
     });
   }
-
-
 }
