@@ -1,5 +1,34 @@
 export const wordsArray = [
   {
+    eng: "Existing",
+    ru: "Существующий"
+  },
+  {
+    eng: "Transitioning",
+    ru: "Переход, Переходной период"
+  },
+  {
+    eng: "Ensuring",
+    ru: "Обеспечение"
+  },
+  {
+    eng: "Stable",
+    ru: "Стабильность"
+  },
+  {
+    eng: "Friendly",
+    ru: "Дружная"
+  },
+  {
+    eng: "Handle",
+    ru: "Управлять, Решать, Ручка, Рукоятка"
+  },
+
+
+
+
+
+  {
       eng: "Even",
       ru: "Даже"
   },
@@ -90,10 +119,6 @@ export const wordsArray = [
   {
     eng: "tall",
     ru: "высокий"
-  },
-  {
-    eng: "I have a cold",
-    ru: "я простудился"
   },
   {
     eng: "I have a cold",
@@ -302,5 +327,87 @@ export const wordsArray = [
   {
     eng: "journey, travelling",
     ru: "путишевствие"
+  },
+]
+
+export const arrDays = [
+  {
+    eng: "Monday",
+    ru: "Понедельник"
+  },
+  {
+    eng: "Tuesday",
+    ru: "Вторник"
+  },
+  {
+    eng: "Wednesday",
+    ru: "Среда"
+  },
+  {
+    eng: "Thursday",
+    ru: "Четверг"
+  },
+  {
+    eng: "Friday",
+    ru: "Пятница"
+  },
+  {
+    eng: "Saturday",
+    ru: "Суббота"
+  },
+  {
+    eng: "Sunday",
+    ru: "Воскресенье"
+  },
+]
+
+export const arrMounts = [
+  {
+    eng: "January",
+    ru: "Январь"
+  },
+  {
+    eng: "February",
+    ru: "Февраль"
+  },
+  {
+    eng: "March",
+    ru: "Март"
+  },
+  {
+    eng: "April",
+    ru: "Апрель"
+  },
+  {
+    eng: "May",
+    ru: "Май"
+  },
+  {
+    eng: "June",
+    ru: "Июнь"
+  },
+  {
+    eng: "July",
+    ru: "Июль"
+  },
+  {
+    eng: "August",
+    ru: "Август"
+  },
+  {
+    eng: "September",
+    ru: "Сентябрь"
+  },
+  {
+    eng: "October",
+    ru: "Октябрь"
+  },
+  {
+    eng: "November",
+    ru: "Ноябрь"
+  },
+  {
+    eng: "December",
+    ru: "Декабрь"
   },
 ]

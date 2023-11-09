@@ -20,12 +20,14 @@ import {animate, style, transition, trigger} from "@angular/animations";
     ])
   ]
 })
+
 export class FlipCardComponent implements OnInit {
   isFlipped: boolean = false;
   wordsInEng: string[] = [];
   wordsInRu: string[] = [];
   testLet = true;
-  totalWords = wordsArray.length
+  totalWords = 0
+  shuffledArray = wordsArray;
   languages = [
     {id: 1, value: "Английский"},
     {id: 2, value: "Русский"},
@@ -34,6 +36,9 @@ export class FlipCardComponent implements OnInit {
   initialStateLang = "Английский";
   currentCardIndex: number = 0;
   ngOnInit() {
+    this.shuffledArray = this.shuffle(wordsArray);
+    console.log(this.shuffledArray)
+    this.totalWords = this.shuffledArray.length;
     this.customChangeWords();
     this.checkLanguages(this.initialStateLang);
     this.changeLanguage(this.initialStateLang);
@@ -41,6 +46,20 @@ export class FlipCardComponent implements OnInit {
   changeLanguage(value: string) {
     this.initialStateLang = value;
     this.checkLanguages(this.initialStateLang);
+  }
+  // перетасовываю массив
+  shuffle(array: any) {
+    let currentIndex = array.length,  randomIndex;
+
+    while (currentIndex > 0) {
+
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+    return array;
   }
 
   flipCard() {
@@ -65,7 +84,7 @@ export class FlipCardComponent implements OnInit {
   previousCard() {
     this.testLet = false;
     this.checkLanguages(this.initialStateLang);
-    this.currentCardIndex = (this.currentCardIndex - 1 + wordsArray.length) % wordsArray.length;
+    this.currentCardIndex = (this.currentCardIndex - 1 + this.shuffledArray.length) % this.shuffledArray.length;
     this.customChangeWords();
     setTimeout(() => {
       this.testLet = true;
@@ -75,7 +94,7 @@ export class FlipCardComponent implements OnInit {
   nextCard() {
     this.testLet = false;
     this.checkLanguages(this.initialStateLang);
-    this.currentCardIndex = (this.currentCardIndex + 1) % wordsArray.length;
+    this.currentCardIndex = (this.currentCardIndex + 1) % this.shuffledArray.length;
     this.customChangeWords();
     setTimeout(() => {
       this.testLet = true;
@@ -83,17 +102,17 @@ export class FlipCardComponent implements OnInit {
   }
 
   customChangeWords() {
-    this.wordsInEng = wordsArray[this.currentCardIndex].eng.split(',').map((word: string, index: number) => {
+    this.wordsInEng = this.shuffledArray[this.currentCardIndex].eng.split(',').map((word: string, index: number) => {
       word = word.trim()
-      if (index !== wordsArray[this.currentCardIndex].eng.split(',').length - 1) {
+      if (index !== this.shuffledArray[this.currentCardIndex].eng.split(',').length - 1) {
         return word.trim().charAt(0).toUpperCase() + word.slice(1) + ',';
       }
       return word.trim().charAt(0).toUpperCase() + word.slice(1);
     });
 
-    this.wordsInRu = wordsArray[this.currentCardIndex].ru.split(',').map((word: string, index: number) => {
+    this.wordsInRu = this.shuffledArray[this.currentCardIndex].ru.split(',').map((word: string, index: number) => {
       word = word.trim()
-      if (index !== wordsArray[this.currentCardIndex].ru.split(',').length - 1) {
+      if (index !== this.shuffledArray[this.currentCardIndex].ru.split(',').length - 1) {
         return word.trim().charAt(0).toUpperCase() + word.slice(1) + ',';
       }
       return word.trim().charAt(0).toUpperCase() + word.slice(1);

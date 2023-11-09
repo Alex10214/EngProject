@@ -6,7 +6,7 @@
   </div>
 
   <div class="card-container">
-    <button class="btn" (click)="previousCard()">Предыдущая карточка</button>
+    <button mat-raised-button color="primary" class="btn" (click)="previousCard()">Предыдущая карточка</button>
     <div class="card-box">
       <div class="test" [@fadeInOut]="" *ngIf="testLet">
         <div class="card" [class.flipped]="isFlipped" (click)="flipCard()">
@@ -23,7 +23,8 @@
         </div>
       </div>
     </div>
-    <button class="btn" (click)="nextCard()">Следующая карточка</button>
+    <button mat-raised-button color="primary" class="btn" (click)="nextCard()">Следующая карточка</button>
+
   </div>
 
   <div class="buttons-container">

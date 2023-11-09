@@ -11,6 +11,12 @@ import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import {MatButtonModule} from "@angular/material/button";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatIconModule} from "@angular/material/icon";
+import {MatTableModule} from "@angular/material/table";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
     declarations: [
@@ -19,14 +25,21 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
         HeaderComponent,
         FooterComponent,
         MainLayoutComponent,
-        HomePageComponent
+        HomePageComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatTableModule,
+    MatExpansionModule,
+    MatListModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
