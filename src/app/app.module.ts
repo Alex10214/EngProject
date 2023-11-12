@@ -17,6 +17,8 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatTableModule} from "@angular/material/table";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatListModule} from "@angular/material/list";
+import { AccordionComponent } from './components/Accordion/accordion.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
     declarations: [
@@ -26,6 +28,8 @@ import {MatListModule} from "@angular/material/list";
         FooterComponent,
         MainLayoutComponent,
         HomePageComponent,
+        AccordionComponent,
+        TableComponent,
     ],
   imports: [
     BrowserModule,

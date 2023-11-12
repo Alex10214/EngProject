@@ -1,7 +1,123 @@
 export const wordsArray = [
   {
-    eng: "Existing",
-    ru: "Существующий"
+    eng: "The most",
+    ru: "самый, найболее, крупнейший"
+  },
+  {
+    eng: "Exactly",
+    ru: "именно так, в точку, вот иенно"
+  },
+  {
+    eng: "past",
+    ru: "прошлый, в прошлом, прошедший"
+  },
+  {
+    eng: "opportunity",
+    ru: "возможность"
+  },
+  {
+    eng: "actually",
+    ru: "на самом деле, фактически"
+  },
+  {
+    eng: "able",
+    ru: "в сосотоянии, способный"
+  },
+  {
+    eng: "cheat",
+    ru: "обман, мошенничество, жульничать"
+  },
+  {
+    eng: "gorgeous",
+    ru: "великолепно"
+  },
+  {
+    eng: "rat",
+    ru: "крыса"
+  },
+  {
+    eng: "poor",
+    ru: "будный"
+  },
+  {
+    eng: "poor",
+    ru: "будный"
+  },
+  {
+    eng: "Decide",
+    ru: "Решить, принять решение"
+  },
+  {
+    eng: "garden",
+    ru: "Сад"
+  },
+  {
+    eng: "Long",
+    ru: "Длинный, Долгий"
+  },
+  {
+    eng: "Large",
+    ru: "Большой, Огромный"
+  },
+  {
+    eng: "So",
+    ru: "Так, итак"
+  },
+  {
+    eng: "Just",
+    ru: "Только что, просто"
+  },
+  {
+    eng: "Only",
+    ru: "Только"
+  },
+  {
+    eng: "Into",
+    ru: "Внутрь"
+  },
+  {
+    eng: "Bet",
+    ru: "держать пари, заключать пари"
+  },
+  {
+    eng: "move",
+    ru: "Двигаится"
+  },
+  {
+    eng: "spend",
+    ru: "тратить"
+  },
+  {
+    eng: "grow",
+    ru: "расти"
+  },
+  {
+    eng: "part",
+    ru: "доля, часть"
+  },
+  {
+    eng: "area",
+    ru: "область, площадь, территория"
+  },
+  {
+    eng: "idea",
+    ru: "идея, мысль"
+  },
+  {
+    eng: "health",
+    ru: "здоровье"
+  },
+  {
+    eng: "angry",
+    ru: "злой, сердитый"
+  },
+  {
+    eng: "high",
+    ru: "высокий"
+  },
+  {
+    eng: "Exist",
+    ru: "Существовать"
   },
   {
     eng: "Transitioning",
@@ -23,11 +139,6 @@ export const wordsArray = [
     eng: "Handle",
     ru: "Управлять, Решать, Ручка, Рукоятка"
   },
-
-
-
-
-
   {
       eng: "Even",
       ru: "Даже"
@@ -53,7 +164,7 @@ export const wordsArray = [
     ru: "клиент"
   },
   {
-    eng: "going to, gona",
+    eng: "going to, gonna",
     ru: "собираюсь"
   },
   {
@@ -90,7 +201,7 @@ export const wordsArray = [
   },
   {
     eng: "leave",
-    ru: "оставить"
+    ru: "оставить, покидать"
   },
   {
     eng: "lose",
@@ -214,7 +325,7 @@ export const wordsArray = [
   },
   {
     eng: "expensive",
-    ru: "дорогой, или можно сказать дорогостоящий"
+    ru: "дорогой, дорогостоящий"
   },
   {
     eng: "better",
@@ -223,10 +334,6 @@ export const wordsArray = [
   {
     eng: "than",
     ru: "чем"
-  },
-  {
-    eng: "then",
-    ru: "затем"
   },
   {
     eng: "relieve",
@@ -274,7 +381,7 @@ export const wordsArray = [
   },
   {
     eng: "except",
-    ru: "кроме"
+    ru: "кроме, за исключением"
   },
   {
     eng: "execute",
@@ -282,7 +389,7 @@ export const wordsArray = [
   },
   {
     eng: "same",
-    ru: "тот же"
+    ru: "тот же, одинаковый"
   },
   {
     eng: "between",
@@ -302,7 +409,7 @@ export const wordsArray = [
   },
   {
     eng: "then",
-    ru: "тогда"
+    ru: "тогда, затем"
   },
   {
     eng: "way",
@@ -322,7 +429,7 @@ export const wordsArray = [
   },
   {
     eng: "become",
-    ru: "стать"
+    ru: "становиться"
   },
   {
     eng: "journey, travelling",
@@ -410,4 +517,279 @@ export const arrMounts = [
     eng: "December",
     ru: "Декабрь"
   },
+]
+
+export const arrIrregularVerbs = [
+  {
+    infinitive: "arise",
+    pastSimple: "arose",
+    participle: "arisen",
+    ru: "подниматься"
+  },
+  {
+    infinitive: "awake",
+    pastSimple: "awoke",
+    participle: "awoken",
+    ru: "пробуждать"
+  },
+  {
+    infinitive: "be",
+    pastSimple: "was / were",
+    participle: "been",
+    ru: "быть"
+  },
+  {
+    infinitive: "bear",
+    pastSimple: "bore",
+    participle: "born",
+    ru: "переносить, выносить"
+  },
+  {
+    infinitive: "beat",
+    pastSimple: "beat",
+    participle: "beaten",
+    ru: "бить"
+  },
+  {
+    infinitive: "become",
+    pastSimple: "became",
+    participle: "become",
+    ru: "становиться"
+  },
+  {
+    infinitive: "begin",
+    pastSimple: "began",
+    participle: "begun",
+    ru: "начинать"
+  },
+  {
+    infinitive: "bend",
+    pastSimple: "bent",
+    participle: "bent",
+    ru: "наклонять, гнуть, сгибать"
+  },
+  {
+    infinitive: "bet",
+    pastSimple: "bet",
+    participle: "bet",
+    ru: "держать пари, заключать пари"
+  },
+  {
+    infinitive: "bind",
+    pastSimple: "bound",
+    participle: "bound",
+    ru: "связать"
+  },
+  {
+    infinitive: "bite",
+    pastSimple: "bit",
+    participle: "bitten",
+    ru: "кусать, клевать, жалить"
+  },
+  {
+    infinitive: "bleed",
+    pastSimple: "bled",
+    participle: "bled",
+    ru: "кровоточить, истекать кровью"
+  },
+  {
+    infinitive: "bleed",
+    pastSimple: "bled",
+    participle: "bled",
+    ru: "кровоточить, истекать кровью"
+  },
+  {
+    infinitive: "blow",
+    pastSimple: "blew",
+    participle: "blown",
+    ru: "дуть, веять, задувать, выдувать"
+  },
+  {
+    infinitive: "break",
+    pastSimple: "broke",
+    participle: "broken",
+    ru: "ломать, прерывать"
+  },
+  {
+    infinitive: "bring",
+    pastSimple: "brought",
+    participle: "brought",
+    ru: "приносить, приводить"
+  },
+  {
+    infinitive: "build",
+    pastSimple: "built",
+    participle: "built",
+    ru: "строить, сооружать"
+  },
+  {
+    infinitive: "buy",
+    pastSimple: "bought",
+    participle: "bought",
+    ru: "покупать"
+  },
+  {
+    infinitive: "catch",
+    pastSimple: "caught",
+    participle: "caught",
+    ru: "поймать, ловить"
+  },
+  {
+    infinitive: "choose",
+    pastSimple: "chose",
+    participle: "chosen",
+    ru: "выбирать"
+  },
+  {
+    infinitive: "cling",
+    pastSimple: "clung",
+    participle: "clung",
+    ru: "цепляться"
+  },
+  {
+    infinitive: "come",
+    pastSimple: "came",
+    participle: "come",
+    ru: "приходить"
+  },
+  {
+    infinitive: "cost",
+    pastSimple: "cost",
+    participle: "cost",
+    ru: "оценивать, стоить"
+  },
+  {
+    infinitive: "cut",
+    pastSimple: "cut",
+    participle: "cut",
+    ru: "резать, обрезать"
+  },
+  {
+    infinitive: "deal",
+    pastSimple: "dealt",
+    participle: "dealt",
+    ru: "иметь дело, вести дела"
+  },
+  {
+    infinitive: "dig",
+    pastSimple: "dug",
+    participle: "dug",
+    ru: "копать, рыть"
+  },
+  {
+    infinitive: "do",
+    pastSimple: "did",
+    participle: "done",
+    ru: "делать, выполнять"
+  },
+  {
+    infinitive: "draw",
+    pastSimple: "drew",
+    participle: "drawn",
+    ru: "чертить, рисовать, тянуть, тащить"
+  },
+  {
+    infinitive: "drink",
+    pastSimple: "drank",
+    participle: "drunk",
+    ru: "пить, выпивать"
+  },
+  {
+    infinitive: "drive",
+    pastSimple: "drove",
+    participle: "driven",
+    ru: "водить (машину), управлять, ездить"
+  },
+  {
+    infinitive: "eat",
+    pastSimple: "ate",
+    participle: "eaten",
+    ru: "есть, принимать пищу, кушать"
+  },
+  {
+    infinitive: "fall",
+    pastSimple: "fell",
+    participle: "fallen",
+    ru: "падать"
+  },
+  {
+    infinitive: "feed",
+    pastSimple: "fed",
+    participle: "fed",
+    ru: "кормить"
+  },
+  {
+    infinitive: "feel",
+    pastSimple: "feel",
+    participle: "feel",
+    ru: "чувствовать"
+  },
+  {
+    infinitive: "fight",
+    pastSimple: "fight",
+    participle: "fought",
+    ru: "бороться, сражаться, драться"
+  },
+  {
+    infinitive: "find",
+    pastSimple: "found",
+    participle: "found",
+    ru: "находить, обнаруживать"
+  },
+  {
+    infinitive: "flee",
+    pastSimple: "fled",
+    participle: "fled",
+    ru: "сбегать, спасаться бегством"
+  },
+  {
+    infinitive: "fly",
+    pastSimple: "flew",
+    participle: "flown",
+    ru: "летать"
+  },
+  {
+    infinitive: "forbid",
+    pastSimple: "forbade",
+    participle: "forbidden",
+    ru: "запрещать"
+  },
+  {
+    infinitive: "forget",
+    pastSimple: "forgot",
+    participle: "forgotten",
+    ru: "забывать"
+  },
+  {
+    infinitive: "forgive",
+    pastSimple: "forgave",
+    participle: "forgiven",
+    ru: "простить, прощать"
+  },
+  {
+    infinitive: "freeze",
+    pastSimple: "froze",
+    participle: "frozen",
+    ru: "замерзать, замораживать"
+  },
+  {
+    infinitive: "get",
+    pastSimple: "got",
+    participle: "gotten / got",
+    ru: "получать"
+  },
+  {
+    infinitive: "give",
+    pastSimple: "gave",
+    participle: "given",
+    ru: "давать"
+  },
+  {
+    infinitive: "go",
+    pastSimple: "went",
+    participle: "gone",
+    ru: "идти, ехать"
+  },
+
+
 ]

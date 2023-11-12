@@ -46,6 +46,11 @@ $color2: #4799eb;
   transition: transform 0.5s;
   cursor: pointer;
   position: relative;
+
+  li {
+    text-align: center;
+    margin-bottom: 7px;
+  }
 }
 
 .card.flipped {
@@ -132,6 +137,7 @@ $color2: #4799eb;
     input[type="radio"] {
       position: absolute;
       opacity: 0;
+
 
       + .radio-label {
         cursor: pointer;

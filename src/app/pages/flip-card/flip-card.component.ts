@@ -101,6 +101,8 @@ export class FlipCardComponent implements OnInit {
     },200)
   }
 
+
+
   customChangeWords() {
     this.wordsInEng = this.shuffledArray[this.currentCardIndex].eng.split(',').map((word: string, index: number) => {
       word = word.trim()
@@ -118,4 +120,5 @@ export class FlipCardComponent implements OnInit {
       return word.trim().charAt(0).toUpperCase() + word.slice(1);
     });
   }
+
 }
