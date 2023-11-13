@@ -37,11 +37,7 @@ export const wordsArray = [
   },
   {
     eng: "poor",
-    ru: "будный"
-  },
-  {
-    eng: "poor",
-    ru: "будный"
+    ru: "бедный"
   },
   {
     eng: "Decide",
@@ -397,7 +393,11 @@ export const wordsArray = [
   },
   {
     eng: "over, above",
-    ru: "над"
+    ru: "над, выше"
+  },
+  {
+    eng: "quality",
+    ru: "качество"
   },
   {
     eng: "what is the difference between",
