@@ -1,7 +1,51 @@
 export const wordsArray = [
   {
+    eng: "explain",
+    ru: "объяснить"
+  },
+  {
+    eng: "without",
+    ru: "без"
+  },
+  {
+    eng: "adventure",
+    ru: "приключение"
+  },
+  {
+    eng: "involve",
+    ru: "задействовать, привлечь"
+  },
+  {
+    eng: "carries",
+    ru: "несет, несет в себе"
+  },
+  {
     eng: "The most",
     ru: "самый, найболее, крупнейший"
+  },
+  {
+    eng: "dedicate",
+    ru: "вятить, посвящать, "
+  },
+  {
+    eng: "Bet",
+    ru: "держать пари, заключать пари"
+  },
+  {
+    eng: "empower,expand",
+    ru: "расширить возможности"
+  },
+  {
+    eng: "scalable, scalability",
+    ru: "масштабируемый, масштабируемость"
+  },
+  {
+    eng: "promote,advance",
+    ru: "продвигать"
+  },
+  {
+    eng: "able",
+    ru: "в сосотоянии, способный"
   },
   {
     eng: "Exactly",
@@ -20,16 +64,12 @@ export const wordsArray = [
     ru: "на самом деле, фактически"
   },
   {
-    eng: "able",
-    ru: "в сосотоянии, способный"
-  },
-  {
     eng: "cheat",
     ru: "обман, мошенничество, жульничать"
   },
   {
     eng: "gorgeous",
-    ru: "великолепно"
+    ru: "великолепный"
   },
   {
     eng: "rat",
@@ -70,10 +110,6 @@ export const wordsArray = [
   {
     eng: "Into",
     ru: "Внутрь"
-  },
-  {
-    eng: "Bet",
-    ru: "держать пари, заключать пари"
   },
   {
     eng: "move",
@@ -238,6 +274,10 @@ export const wordsArray = [
   {
     eng: "fancy",
     ru: "изысканый"
+  },
+  {
+    eng: "suppose",
+    ru: "предполагать"
   },
   {
     eng: "clothes",
