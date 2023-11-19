@@ -1,5 +1,41 @@
 export const wordsArray = [
   {
+    eng: "propose",
+    ru: "предлагать"
+  },
+  {
+    eng: "weaknesses",
+    ru: "слабые стороны"
+  },
+  {
+    eng: "abroad",
+    ru: "за границей"
+  },
+  {
+    eng: "Studied",
+    ru: "Учился"
+  },
+  {
+    eng: "Happened",
+    ru: "Случился"
+  },
+  {
+    eng: "after that",
+    ru: "после этого"
+  },
+  {
+    eng: "engage in",
+    ru: "участвовать в"
+  },
+  {
+    eng: "kind",
+    ru: "вид, тип, сорт, добрый"
+  },
+  {
+    eng: "opinion",
+    ru: "мнение"
+  },
+  {
     eng: "explain",
     ru: "объяснить"
   },
@@ -24,8 +60,12 @@ export const wordsArray = [
     ru: "самый, найболее, крупнейший"
   },
   {
+    eng: "Bless you",
+    ru: "Будь здоров  "
+  },
+  {
     eng: "dedicate",
-    ru: "вятить, посвящать, "
+    ru: "посвящать"
   },
   {
     eng: "Bet",
@@ -322,6 +362,10 @@ export const wordsArray = [
   {
     eng: "shoes",
     ru: "обувь"
+  },
+  {
+    eng: "short",
+    ru: "короткий"
   },
   {
     eng: "each",
