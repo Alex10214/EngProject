@@ -4,6 +4,26 @@ export const wordsArray = [
     ru: "предлагать"
   },
   {
+    eng: "Everybody",
+    ru: "все, всякий"
+  },
+  {
+    eng: "Nowhere",
+    ru: "нигде,никуда"
+  },
+  {
+    eng: "Everything",
+    ru: "всё"
+  },
+  {
+    eng: "Somebody",
+    ru: "кто-то, кто-нибудь"
+  },
+  {
+    eng: "Nothing",
+    ru: "ничего"
+  },
+  {
     eng: "weaknesses",
     ru: "слабые стороны"
   },
@@ -157,11 +177,19 @@ export const wordsArray = [
   },
   {
     eng: "spend",
-    ru: "тратить"
+    ru: "тратить, проводить"
+  },
+  {
+    eng: "it depends on",
+    ru: "это зависит от, зависит от того"
   },
   {
     eng: "grow",
     ru: "расти"
+  },
+  {
+    eng: "accompany",
+    ru: "сопровождать"
   },
   {
     eng: "part",
