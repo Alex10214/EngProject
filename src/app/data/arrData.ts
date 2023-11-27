@@ -1,8 +1,178 @@
 export const wordsArray = [
   {
-    eng: "propose",
-    ru: "предлагать"
+    eng: "confirmation",
+    ru: "подтверждение"
   },
+  {
+    eng: "willing",
+    ru: "желающий"
+  },
+  {
+    eng: "fascinating",
+    ru: "увлекательно"
+  },
+  {
+    eng: "lovely",
+    ru: "прекрасный"
+  },
+  {
+    eng: "replenish",
+    ru: "пополнить"
+  },
+  {
+    eng: "dare",
+    ru: "осмелиться, отваживаться"
+  },
+  {
+    eng: "poison",
+    ru: "яд, отрава"
+  },
+  {
+    eng: "divine",
+    ru: "божественный, изумительный"
+  },
+  {
+    eng: "strange, weird",
+    ru: "странный"
+  },
+  {
+    eng: "exquisite",
+    ru: "изысканный"
+  },
+  {
+    eng: "waiter",
+    ru: "официант"
+  },
+  {
+    eng: "plant",
+    ru: "растение, завод"
+  },
+  {
+    eng: "definitely not",
+    ru: "точно нет, определённо нет, однозначно нет"
+  },
+  {
+    eng: "clever",
+    ru: "умный"
+  },
+  {
+    eng: "coolest",
+    ru: "самый крутой"
+  },
+  {
+    eng: "nearly",
+    ru: "почти, практически"
+  },
+  {
+    eng: "stuntman",
+    ru: "каскадер"
+  },
+  {
+    eng: "tool",
+    ru: "инструмент"
+  },
+  {
+    eng: "package",
+    ru: "пакет, упаковка, упаковывать"
+  },
+  {
+    eng: "raid",
+    ru: "набег, налёт "
+  },
+  {
+    eng: "darling",
+    ru: "дорогой, дорогая, любимый.."
+  },
+  {
+    eng: "advert",
+    ru: "реклама"
+  },
+  {
+    eng: "smooth",
+    ru: "гладкий, плавный"
+  },
+  {
+    eng: "melt",
+    ru: "плавить, таять, растопить"
+  },
+  {
+    eng: "born",
+    ru: "родиться"
+  },
+  {
+    eng: "adorable",
+    ru: "очаровательный, восхитительный"
+  },
+  {
+    eng: "both",
+    ru: "оба, обе"
+  },
+  {
+    eng: "smell, smelled",
+    ru: "запах, пахло"
+  },
+  {
+    eng: "noise",
+    ru: "шум"
+  },
+  {
+    eng: "i wanted, i want, wanted",
+    ru: "я хотел, я хочу, разыскивается"
+  },
+  {
+    eng: "sweet",
+    ru: "сладкий, милый"
+  },
+  {
+    eng: "stains",
+    ru: "пятна"
+  },
+  {
+    eng: "dirty",
+    ru: "грязный"
+  },
+  {
+    eng: "arrive",
+    ru: "прибыть"
+  },
+  {
+    eng: "laugh",
+    ru: "смеятся, хохотать"
+  },
+  {
+    eng: "separate",
+    ru: "разделять, отдельно"
+  },
+  {
+    eng: "fridge",
+    ru: "холодильник"
+  },
+  {
+    eng: "umbrella",
+    ru: "зонт"
+  },
+  {
+    eng: "paradise",
+    ru: "рай"
+  },
+  {
+    eng: "taste",
+    ru: "вкус, пробовать"
+  },
+  {
+    eng: "exhausting",
+    ru: "изнурительный, утомительный"
+  },
+  {
+    eng: "chase",
+    ru: "погоня, преследование"
+  },
+
+
+  // {
+  //   eng: "propose",
+  //   ru: "предлагать"
+  // },
   // {
   //   eng: "Everybody",
   //   ru: "все, всякий"
@@ -23,18 +193,18 @@ export const wordsArray = [
   //   eng: "Nothing",
   //   ru: "ничего"
   // },
-  {
-    eng: "weaknesses",
-    ru: "слабые стороны"
-  },
-  {
-    eng: "strengths",
-    ru: "сильные стороны"
-  },
-  {
-    eng: "abroad",
-    ru: "за границей"
-  },
+  // {
+  //   eng: "weaknesses",
+  //   ru: "слабые стороны"
+  // },
+  // {
+  //   eng: "strengths",
+  //   ru: "сильные стороны"
+  // },
+  // {
+  //   eng: "abroad",
+  //   ru: "за границей"
+  // },
   // {
   //   eng: "Study",
   //   ru: "Учиться, изучать"
@@ -47,14 +217,14 @@ export const wordsArray = [
   //   eng: "after that",
   //   ru: "после этого"
   // },
-  {
-    eng: "engage in",
-    ru: "участвовать в"
-  },
-  {
-    eng: "kind",
-    ru: "вид, тип, сорт, добрый"
-  },
+  // {
+  //   eng: "engage in",
+  //   ru: "участвовать в"
+  // },
+  // {
+  //   eng: "kind",
+  //   ru: "вид, тип, сорт, добрый"
+  // },
   // {
   //   eng: "opinion",
   //   ru: "мнение"
@@ -71,14 +241,14 @@ export const wordsArray = [
   //   eng: "adventure",
   //   ru: "приключение"
   // },
-  {
-    eng: "involve",
-    ru: "задействовать, привлечь"
-  },
-  {
-    eng: "carries",
-    ru: "нести, возить, тоскать"
-  },
+  // {
+  //   eng: "involve",
+  //   ru: "задействовать, привлечь"
+  // },
+  // {
+  //   eng: "carries",
+  //   ru: "нести, возить, тоскать"
+  // },
   // {
   //   eng: "The most",
   //   ru: "самый, найболее, крупнейший"
@@ -87,18 +257,18 @@ export const wordsArray = [
   //   eng: "Bless you",
   //   ru: "Будь здоров  "
   // },
-  {
-    eng: "dedicate",
-    ru: "посвящать"
-  },
+  // {
+  //   eng: "dedicate",
+  //   ru: "посвящать"
+  // },
   // {
   //   eng: "Bet",
   //   ru: "держать пари, заключать пари"
   // },
-  {
-    eng: "empower,expand",
-    ru: "расширить возможности"
-  },
+  // {
+  //   eng: "empower,expand",
+  //   ru: "расширить возможности"
+  // },
   // {
   //   eng: "scalable, scalability",
   //   ru: "масштабируемый, масштабируемость"
@@ -107,10 +277,10 @@ export const wordsArray = [
   //   eng: "promote",
   //   ru: "продвигать"
   // },
-  {
-    eng: "able",
-    ru: "в сосотоянии, способный"
-  },
+  // {
+  //   eng: "able",
+  //   ru: "в сосотоянии, способный"
+  // },
   // {
   //   eng: "Exactly",
   //   ru: "именно так, в точку, вот иенно"
@@ -143,10 +313,10 @@ export const wordsArray = [
   //   eng: "poor",
   //   ru: "бедный"
   // },
-  {
-    eng: "Decide",
-    ru: "Решить, принять решение"
-  },
+  // {
+  //   eng: "Decide",
+  //   ru: "Решить, принять решение"
+  // },
   // {
   //   eng: "garden",
   //   ru: "Сад"
@@ -171,10 +341,10 @@ export const wordsArray = [
   //   eng: "Only",
   //   ru: "Только"
   // },
-  {
-    eng: "Into",
-    ru: "Внутрь"
-  },
+  // {
+  //   eng: "Into",
+  //   ru: "Внутрь"
+  // },
   // {
   //   eng: "move",
   //   ru: "Двигаится"
@@ -183,18 +353,18 @@ export const wordsArray = [
   //   eng: "spend",
   //   ru: "тратить, проводить"
   // },
-  {
-    eng: "it depends on",
-    ru: "это зависит от, зависит от того"
-  },
+  // {
+  //   eng: "it depends on",
+  //   ru: "это зависит от, зависит от того"
+  // },
   // {
   //   eng: "grow",
   //   ru: "расти"
   // },
-  {
-    eng: "accompany",
-    ru: "сопровождать"
-  },
+  // {
+  //   eng: "accompany",
+  //   ru: "сопровождать"
+  // },
   // {
   //   eng: "part",
   //   ru: "доля, часть"
@@ -244,8 +414,8 @@ export const wordsArray = [
   //   ru: "Управлять, Решать, Ручка, Рукоятка"
   // },
   // {
-  //     eng: "Even",
-  //     ru: "Даже"
+  //   eng: "Even",
+  //   ru: "Даже"
   // },
   // {
   //   eng: "Prefer",
@@ -344,13 +514,13 @@ export const wordsArray = [
   //   ru: "занят"
   // },
   // {
-  //   eng: "fancy",
-  //   ru: "изысканый"
+  //   eng: "fancy, fashionable",
+  //   ru: "модный"
   // },
-  {
-    eng: "suppose",
-    ru: "предполагать"
-  },
+  // {
+  //   eng: "suppose",
+  //   ru: "предполагать"
+  // },
   // {
   //   eng: "clothes",
   //   ru: "одежда"
@@ -403,10 +573,10 @@ export const wordsArray = [
   //   eng: "each",
   //   ru: "каждый"
   // },
-  {
-    eng: "completely",
-    ru: "полностью"
-  },
+  // {
+  //   eng: "completely",
+  //   ru: "полностью"
+  // },
   // {
   //   eng: "few",
   //   ru: "немного"
