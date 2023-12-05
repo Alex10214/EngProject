@@ -1,11 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import {HomePageService} from "./home-page.service";
+import {Day, Month} from "../../intefaces/interfaces";
 
-import {arrDays} from "../../data/arrData";
-
-export interface PeriodicElement {
-  eng: string;
-  ru: string;
-}
 
 @Component({
   selector: 'app-home-page',
@@ -13,13 +9,21 @@ export interface PeriodicElement {
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit{
-  dataSource: PeriodicElement[] = [];
-  displayedColumns: string[] = ['eng', 'ru'];
+  arrDays: Day[] = [];
+  arrMounts: Month[] = [];
   panelOpenState = false;
 
+  constructor(private homePageService: HomePageService) {
+  }
+
   ngOnInit() {
-    console.log(arrDays)
-    this.dataSource = arrDays;
+    this.homePageService.getDays().subscribe((days: Day[]) => {
+      this.arrDays = days;
+    });
+
+    this.homePageService.getDays().subscribe((days: Day[]) => {
+      this.arrDays = days;
+    });
   }
 
 }

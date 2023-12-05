@@ -1,12 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {arrIrregularVerbs} from '../../data/arrData'
-
-export interface IrregularVerb {
-  infinitive: string;
-  pastSimple: string;
-  participle: string;
-  ru: string;
-}
+import {Component, Input, OnChanges, OnInit} from '@angular/core';
+import {Day} from "../../intefaces/interfaces";
 
 
 @Component({
@@ -14,28 +7,25 @@ export interface IrregularVerb {
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss']
 })
-export class TableComponent implements OnInit{
+export class TableComponent implements OnInit, OnChanges{
 
-  data: IrregularVerb[] = [];
-  thead: any[] = [];
+  @Input() arrData: Day[] = [];
+
+  data: Day[] = [];
+  columns: Array<keyof Day> = ["ru", "eng"];
+
+  ngOnChanges(): void {
+    if (this.arrData.length) {
+      this.data = this.arrData;
+    }
+  }
 
   ngOnInit() {
-    this.data = arrIrregularVerbs;
-    console.log(this.data[0])
-
-    for (let word in this.data[0]) {
-
-      this.thead.push(word.trim().charAt(0).toUpperCase() + word.slice(1));
-    }
-    console.log(this.thead)
+    this.data = this.arrData;
+    console.log(this.data)
   }
 
-  getObjectKeys(obj: any): any {
-    let word =Object.keys(obj)
-    console.log(word)
-    // word.trim().charAt(0).toUpperCase() + word.slice(1)
-    // Object.keys(obj).trim().charAt(0).toUpperCase() + word.slice(1)
-    // return Object.keys(obj);
+  capitalize(str: string) {
+    return str.toUpperCase()
   }
-
 }

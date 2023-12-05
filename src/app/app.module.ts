@@ -19,6 +19,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
 import {MatListModule} from "@angular/material/list";
 import { AccordionComponent } from './components/Accordion/accordion.component';
 import { TableComponent } from './components/table/table.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -43,6 +44,7 @@ import { TableComponent } from './components/table/table.component';
     MatTableModule,
     MatExpansionModule,
     MatListModule,
+    HttpClientModule
 
   ],
   providers: [],

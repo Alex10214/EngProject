@@ -1,34 +1,18 @@
 <div class="main">
-  <!--  <table class="content-table sticky">-->
-  <!--    <thead>-->
-  <!--    <tr >-->
-  <!--      <th *ngFor="let word of thead">{{word}}</th>-->
-  <!--    </tr>-->
-  <!--    </thead>-->
-  <!--    <tbody>-->
-  <!--    <tr *ngFor="let oneWord of data">-->
-  <!--      <td>{{oneWord.infinitive}}</td>-->
-  <!--      <td>{{oneWord.pastSimple}}</td>-->
-  <!--      <td>{{oneWord.participle}}</td>-->
-  <!--      <td>{{oneWord.ru}}</td>-->
-  <!--    </tr>-->
-  <!--    </tbody>-->
-  <!--  </table>-->
-
-
-  <div class="table sticky">
-    <div class="head">
-      <div class="row">
-        <div class="colum" *ngFor="let word of thead">{{word}}</div>
-      </div>
-    </div>
-<!--    <tbody>-->
-<!--    <tr *ngFor="let oneWord of data">-->
-<!--      <td>{{oneWord.infinitive}}</td>-->
-<!--      <td>{{oneWord.pastSimple}}</td>-->
-<!--      <td>{{oneWord.participle}}</td>-->
-<!--      <td>{{oneWord.ru}}</td>-->
-<!--    </tr>-->
-<!--    </tbody>-->
-  </div>
+  <table class="users-table">
+    <thead>
+    <tr>
+      <th *ngFor="let column of columns" class="users-table-cell">
+        {{ capitalize(column) }}
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let oneDay of data">
+      <td *ngFor="let column of columns" class="users-table-cell">
+        {{ oneDay[column] }}
+      </td>
+    </tr>
+    </tbody>
+  </table>
 </div>

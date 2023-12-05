@@ -7,8 +7,8 @@ import {HomePageComponent} from "./pages/home-page/home-page.component";
 const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
-      // {path: '', redirectTo: '/', pathMatch: "full"},
-      {path: '', redirectTo: '/card-page', pathMatch: "full"}, // пока редирект на карточки со словами
+      {path: '', redirectTo: '/', pathMatch: "full"},
+      // {path: '', redirectTo: '/card-page', pathMatch: "full"}, // пока редирект на карточки со словами
       {path: '', component: HomePageComponent},
       {path: 'card-page', component: FlipCardComponent}
     ]
